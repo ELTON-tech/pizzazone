@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Menu Page</title>
+</head>
+<style>
+    .cart-has-items::before{
+    content: 'number';
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+#cart-counter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    color: white;
+    font-size: 12px;
+    display: block;
+}
+</style>
+<body>
+
+    <header class="head"> 
+        <h1>Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Zone</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="menu.html">Menu</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="side-bar">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-shopping-cart" id="cart-icon"></i> 
+            <span id="cart-counter"></span>
+            <i class="fas fa-bars" id="bars"></i>
+        </div>
+        <form action="#" class="search-bar" id="searchForm">
+            <input type="search" name="search" id="searchInput" placeholder="Search Here">
+            <button type="submit" class="btn">Search</button>
+        </form>
+    
+        <ul id="searchResults"></ul>
+    </header>
+    
+<section class="menu" id="menu">
+    <h4>Our Menu</h4>
+    <div class="menu-content">
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p1.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>Margherita Sushi Pizza</h2>
+                    <div class="price">GHC 150.99</div>
+                    <button class="btn" onclick="addToCart('Margherita Sushi Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p2.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>Italian Cuisine Tomato Pizza</h2>
+                    <div class="price">GHC 120.00</div>
+                    <button class="btn" onclick="addToCart('Italian Cuisine Tomato Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p3.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>Pepperoni Pizza</h2>
+                    <div class="price">GHC 90.99</div>
+                    <button class="btn" onclick="addToCart('Pepperoni Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p4.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>Hamburger Calzone Pizza</h2>
+                    <div class="price">GHC 85.00</div>
+                    <button class="btn" onclick="addToCart('Hamburger Calzone Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p5.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>Tomatos Margherita Pizza</h2>
+                    <div class="price">GHC 60.00</div>
+                    <button class="btn" onclick="addToCart('Tomato Margherita Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p6.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>California-Style,Sicilian Pizza</h2>
+                    <div class="price">GHC 180.00</div>
+                    <button class="btn" onclick="addToCart('California-Style,Sicilian Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p6.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>California-Style,Sicilian Pizza
+                        (Without Meat)
+                    </h2>
+                    <div class="price">GHC 200.00</div>
+                    <button class="btn" onclick="addToCart('California-Style,Sicilian Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p6.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>California-Style,Sicilian Pizza
+                        (Family Size)
+                    </h2>
+                    <div class="price">GHC 250.00</div>
+                    <button class="btn" onclick="addToCart('California-Style,Sicilian Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="veg.png" alt="img" class="veg-icon">
+            <img src="p6.png" alt="">
+            <div class="in-content">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h2>California-Style,Sicilian Pizza
+                        (Small Size)
+                    </h2>
+                    <div class="price">GHC 40.00</div>
+                    <button class="btn" onclick="addToCart('California-Style,Sicilian Pizza')">Add to Cart <i class="fas fa-plus-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart" style="display: block;"></div>
+</section>
+</body>
+<!-- ... (Your existing HTML) ... -->
+
+<script>
+    var cartItems = [];
+
+    function addToCart(item) {
+        cartItems.push(item);
+        alert (item  + ' added to cart');
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        var cartDisplay = document.getElementById('cart');
+        var cartIcon = document.getElementById('cart-icon');
+        var cartCounter = document.getElementById('cart-counter');
+
+        // Update cart icon and counter
+        cartIcon.classList.toggle('cart-has-items', cartItems.length > 0);
+        cartCounter.textContent = cartItems.length;
+
+        // Update cart display
+        cartDisplay.innerHTML = '<h4>Shopping Cart</h4>';
+
+        if (cartItems.length === 0) {
+            cartDisplay.innerHTML += '<p>Your cart is empty</p>';
+        } else {
+            cartDisplay.innerHTML += '<ul>';
+            cartItems.forEach(function (item) {
+                cartDisplay.innerHTML += '<li>' + item + '</li>';
+            });
+            cartDisplay.innerHTML += '</ul>';
+        }
+    }
+
+    // Toggle cart display on cart icon click
+    document.getElementById('cart-icon').addEventListener('click', function (event) {
+        var cartDisplay = document.getElementById('cart');
+        cartDisplay.style.display = (cartDisplay.style.display === 'none' || cartDisplay.style.display === '') ? 'block' : 'none';
+        event.stopPropagation(); // Prevent the click event from reaching the document
+    });
+
+    // Close cart when clicking outside of it
+    document.addEventListener('click', function (event) {
+        var cartDisplay = document.getElementById('cart');
+        if (event.target !== document.getElementById('cart-icon') && !cartDisplay.contains(event.target)) {
+            cartDisplay.style.display = 'none';
+        }
+    });
+</script>
+
+<!-- ... (Your existing HTML) ... -->
+ 
+</html>

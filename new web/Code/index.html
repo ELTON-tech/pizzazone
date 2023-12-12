@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Pizza Zone Site</title>
+</head>
+
+<body>
+    <header class="head"> 
+        <h1>Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Zone</h1>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="menu.html">Menu</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="side-bar">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-shopping-cart" id="cart"></i> 
+            <i class="fas fa-bars" id="bars"></i>
+        </div>
+         <form action="#" class="search-bar" id="searchForm">
+            <input type="search" name="search" id="searchInput" placeholder="Search Here">
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+        <ul id="searchResults"></ul>
+    </header>
+
+    <!----------------------------------Home Section----------------------------->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="inner-content">
+                <h3>Welcome To Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Zone</h3>
+                <p>Discover a slice of heaven with our mouthwatering pizzas.Where every slice is a flavor-packed masterpiece.
+                    From classic Margherita to bold BBQ chicken, our menu is a delicious journey through cheesy goodness.
+                    With easy online ordering and speedy delivery, we're here to satisfy your pizza cravings in the most
+                    convenient way possible. Join us and experince pizza perfection! 
+                </p>
+                <button class="btn"><a href="menu.html">Order Now</a></button>
+            </div>
+            <div class="inner-content-img">
+                <img src="pizza1.png" alt="img">
+            </div>
+        </div>
+    </section>
+</body>
+<!---------------------------about section--------------->
+<section class="about" id="about">
+    <h4>About</h4>
+    <div class="about-sec">
+        <div class="img">
+            <img src="pizza1.png" alt="img">
+        </div>
+        <div class="about-content">
+            <h3>Pizza Zone</h3>
+            <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Labore Repellat Doloremque Dolor Aperiam Nulla Amet Maiores Quaerat! Nobis Accusamus, Fugiat Exercitationem Assumenda Quaerat Deserunt Maxime Illo Iusto Maiores Sit Dolorem.</p>
+            <div class="about-inner">
+                <h5><i class="fas fa-arrow-alt-circle-right"></i>Good Quality</h5>
+                <h5><i class="fas fa-arrow-alt-circle-right"></i>Fresh Vagetables</h5>
+                <h5><i class="fas fa-arrow-alt-circle-right"></i>Available 24X7</h5>
+                <h5><i class="fas fa-arrow-alt-circle-right"></i>Best Price</h5>
+                <h5><i class="fas fa-arrow-alt-circle-right"></i>Best Quality</h5>
+            </div>
+            <a href="https://www.britannica.com/topic/pizza" class="btn" target="_blank">Read More</a>            
+        </div>
+    </div>
+</section>
+
+<!------------------------------------Blog Section----------------->
+<section id="blog" class="blog">
+    <h4>Latest Blog</h4>
+    <div class="inner-blog">
+        <div class="blog-content">
+            <div class="in-blog">
+                <div class="im">
+                    <img src="blog-1.jpg" alt="img">
+                    <div class="in-blog-icon">
+                        <a href="#"><i class="fas fa-calendar"></i>20th June 2021</a>
+                        <a href="#"><i class="fas fa-user"></i>Admin</a>
+                    </div>
+
+                </div>
+                <div class="in-blog-content">
+                    <h2>Pizza is too Good.</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content">
+            <div class="in-blog">
+                <div class="im">
+                    <img src="blog-2.jpg" alt="img">
+                    <div class="in-blog-icon">
+                        <a href="#"><i class="fas fa-calendar"></i>20th June 2021</a>
+                        <a href="#"><i class="fas fa-user"></i>Admin</a>
+                    </div>
+
+                </div>
+                <div class="in-blog-content">
+                    <h2>Amazing Pizza,Best Quality</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content">
+            <div class="in-blog">
+                <div class="im">
+                    <img src="blog-3.jpg" alt="img">
+                    <div class="in-blog-icon">
+                        <a href="#"><i class="fas fa-calendar"></i>20th June 2021</a>
+                        <a href="#"><i class="fas fa-user"></i>Admin</a>
+                    </div>
+
+                </div>
+                <div class="in-blog-content">
+                    <h2>Yummy Pizza, We Loved It.</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------contact Section-------------->
+<footer class="contact" id="contact">
+    <div class="contact-sec">
+        <div class="contact-inner">
+            <div class="contact-inner-col">
+                <img src="contact.png" alt="img" class="image">
+            </div>
+            <div class="contact-inner-col">
+                <h1>Contact US&nbsp;<i class="fas fa-paper-plane"></i></h1>
+                <p>We Want To Hear From You, Write Us:</p>
+                <form action="#" id="" method="get">
+                    <input type="text" name="name" id=" " placeholder="Please Enter Your Name" required>
+                    <input type="email" name="name" id=" " placeholder="Please Enter Your Name" required>
+                    <input type="text" name="name" id=" " placeholder="Please Enter Your Name" required>
+                    <textarea name="" id="" cols="10" rows="8"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Design By&copy; Imar Brown</p>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-telegram"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-------------------------------java script ------------->
+<script>
+     let searchbtn = document.querySelector('#search');
+    let searchfrm = document.querySelector('.head .search-bar');
+
+    searchbtn.onclick = () => {
+        searchfrm.classList.toggle('active');
+        menu.classList.remove('active');
+    }
+
+    let menu = document.querySelector('.head .navbar');
+    document.querySelector('#bars').onclick = () => {
+        menu.classList.toggle('active');
+        searchfrm.classList.remove('active');
+
+    }
+    window.onscroll = () => {
+        menu.classList.remove('active');
+        searchfrm.classList.remove('active');
+    }
+</script>
+
+</html>

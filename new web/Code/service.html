@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+
+    <header class="head"> 
+        <h1>Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Zone</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="menu.html">Menu</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="side-bar">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-shopping-cart" id="cart-icon"></i> 
+            <span id="cart-counter"></span>
+            <i class="fas fa-bars" id="bars"></i>
+        </div>
+        <form action="#" class="search-bar" id="searchForm">
+            <input type="search" name="search" id="searchInput" placeholder="Search Here">
+            <button type="submit" class="btn">Search</button>
+        </form>
+    
+        <ul id="searchResults"></ul>
+    </header>
+
+    <section class="service" id="service">
+        <h4>Services</h4>
+        <div class="service-content">
+            <div class="inner-box">
+                <img src="de1.png" alt="">
+                <h2>Free And Fast Delivery</h2>
+                <p>Enjoy pizza from us and have them delivered straight to your doorstep without any extra charge.
+                    Order now to savor the taste of convenience and deliciousness.</p>
+                <button class="btn" onclick="redirectToRegistration()"> Order Now </button>
+            </div>
+            <div class="inner-box">
+                <img src="pay.png" alt="">
+                <h2>Online Payment</h2>
+                <p>You can securely pay for your order online using various payment methods like credit cards, debit cards,
+                    or even didgital wallets. It's quick,convenient and hassle-free. so go ahead and enjoy a seamless online ordering
+                    experince with us.
+                </p>
+                <button class="btn"><a href="payment.html">Pay Now</a></button>
+            </div>
+            <div class="inner-box">
+                <img src="food.png" alt="">
+                <h2>Fresh Food</h2>
+                <p></p>
+                <button class="btn">Read More</button> 
+            </div>
+        </div>
+        </section>
+</body>
+</html>
